@@ -1,0 +1,52 @@
+.hero {
+  padding: 130px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  margin-bottom: 20px;
+}
+
+.hero span {
+  color: #007bff;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.hero img {
+  width: 140px;
+  height: 40px;
+  margin: 0 20px;
+  vertical-align: middle;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  margin: 40px 80px;
+  padding-right: 240px;
+  text-align: right;
+}
+
+.hero-btn {
+  gap: 8px;
+  margin-left: 740px;
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.hero-btn:hover {
+  background: #fff;
+  color: #007bff;
+}
+.hero-btn svg {
+  display: inline-block;
+  transform: rotate(220deg);
+  transition: transform 0.5s ease-in-out;
+}

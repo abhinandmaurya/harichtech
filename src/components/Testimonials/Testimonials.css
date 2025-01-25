@@ -1,0 +1,86 @@
+.testimonials-container {
+  text-align: center;
+  padding: 80px;
+}
+
+.testimonials-container h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #2575fc;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: #34495e;
+  margin-bottom: 30px;
+}
+
+.testimonial-card {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  border-radius: 8px;
+}
+
+.profile-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.author-info {
+  margin-bottom: 20px;
+}
+
+.author-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.author-title {
+  font-size: 14px;
+  color: #95a5a6;
+}
+.service-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px 20px;
+  gap: 10px;
+}
+.footer-button {
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: for slight depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth animations */
+}
+
+.footer-button:hover {
+  transform: scale(1.1); /* Slight scaling on hover */
+  background-color: white;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.left-button {
+  transform: scale(0.95); /* Slight shrink effect on click */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}

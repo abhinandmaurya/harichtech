@@ -1,0 +1,172 @@
+/* OurWork.css */
+
+.work-container {
+  text-align: center;
+  padding: 60px 50px;
+}
+
+.work-title {
+  font-size: 1.8rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.work-subtitle {
+  font-size: 2.5rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.work-description {
+  font-size: 1rem;
+  color: #141313;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* First image in the first column, spanning 2 rows */
+.grid-item:nth-child(1) {
+  grid-column: 1; /* First column */
+  grid-row: 1 / span 2; /* Span 2 rows */
+}
+
+/* Second image in the second column, first row */
+.grid-item:nth-child(2) {
+  grid-column: 2; /* Second column */
+  grid-row: 1; /* First row */
+}
+
+/* Third image in the second column, second row */
+.grid-item:nth-child(3) {
+  grid-column: 2; /* Second column */
+  grid-row: 2; /* Second row */
+}
+
+/* Fourth image in the third column, first row */
+.grid-item:nth-child(4) {
+  grid-column: 3; /* Third column */
+  grid-row: 1; /* First row */
+}
+
+/* Fifth image in the third column, second row */
+.grid-item:nth-child(5) {
+  grid-column: 3; /* Third column */
+  grid-row: 2; /* Second row */
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images cover the container */
+  display: block;
+}
+
+.dimmed-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1; /* Ensure dimmed image is below the overlay */
+}
+
+.overlay {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 80%; /* Adjust width as needed */
+  z-index: 2; /* Ensure overlay is above the dimmed image */
+}
+
+.overlay-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.overlay-description {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.grid-item:hover .dimmed-image {
+  opacity: 1; /* Show dimmed background on hover */
+}
+
+.grid-item:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.work-btn {
+  background: #0073e6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #007bff;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+  margin-top: 40px;
+}
+
+.work-btn .icon {
+  display: inline-block;
+  transform: rotate(220deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.work-btn:hover {
+  background: #fff;
+  color: #0073e6;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    grid-template-rows: auto; /* Reset rows */
+  }
+
+  .grid-item:nth-child(1),
+  .grid-item:nth-child(2),
+  .grid-item:nth-child(3),
+  .grid-item:nth-child(4),
+  .grid-item:nth-child(5) {
+    grid-column: 1; /* All items in one column */
+    grid-row: auto; /* Reset row span */
+  }
+}

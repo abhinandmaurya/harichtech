@@ -1,0 +1,126 @@
+.service {
+  padding: 40px 80px;
+}
+
+.service-header {
+  margin-bottom: 30px;
+}
+
+.service-header h1 {
+  font-size: 1.5em;
+  color: #2575fc;
+  text-align: start;
+}
+
+.service-header h2 {
+  font-size: 1.8em;
+  color: black;
+  text-align: start;
+}
+
+.service-intro {
+  margin-top: 10px;
+  margin-left: 720px;
+  font-size: 1em;
+  color: black;
+  text-align: end;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px 10px 16px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.card-body {
+  padding: 15px;
+}
+.card-header h3 {
+  font-size: 1.5rem;
+}
+
+.card-body p {
+  color: #333;
+  line-height: 1.5;
+}
+
+.card-image {
+  text-align: center;
+  padding: 10px;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card-arrow {
+  text-align: right;
+  padding: 10px;
+}
+.service-footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+.footer-button {
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: for slight depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth animations */
+}
+
+.footer-button:hover {
+  transform: scale(1.1); /* Slight scaling on hover */
+  background-color: white;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.left-button {
+  transform: scale(0.95); /* Slight shrink effect on click */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
+.right-button {
+  font-size: 20px;
+  color: white;
+}
